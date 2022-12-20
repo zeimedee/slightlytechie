@@ -16,7 +16,5 @@ func ConnectDb() *sql.DB {
 		panic(err)
 	}
 
-	// defer conn.Close()
-
 	return conn
 }

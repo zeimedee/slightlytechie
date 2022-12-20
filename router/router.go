@@ -14,8 +14,8 @@ func SetUpRouter() *gin.Engine {
 		apiv1.POST("/add", controllers.AddPost)
 		apiv1.GET("/read/:id", controllers.ReadPost)
 		apiv1.GET("/readall", controllers.ReadAllPost)
-		apiv1.PATCH("/update", controllers.UpdatePost)
-		apiv1.DELETE("/delete", controllers.DeletePost)
+		apiv1.PATCH("/update/:id", controllers.UpdatePost)
+		apiv1.DELETE("/delete/:id", controllers.DeletePost)
 	}
 
 	return router

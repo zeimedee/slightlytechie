@@ -5,4 +5,5 @@ type Post struct {
 	Title      string `json:"title"`
 	Body       string `json:"body"`
 	Created_at string `json:"created_at"`
+	Updated_at string `json:"updated_at"`
 }
